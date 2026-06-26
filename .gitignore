@@ -1,0 +1,16 @@
+__pycache__/
+*.pyc
+*.zip
+*.png
+!wc2026-rosters/assets/
+!wc2026-rosters/assets/*.png
+copilot_usage_report/
+wc2026-rosters-publish/
+wc2026-rosters/data/photo-*-cache.json
+analyze_copilot_usage.py
+argentina-squad.json
+fifa-main.js
+fifa-teams-module.json
+fifa-teams-page.json
+wc2026-rosters/scripts/fill_fotmob_photos.py
+wc2026-rosters/scripts/fill_missing_photos.py

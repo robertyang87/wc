@@ -1,0 +1,60 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <meta name="format-detection" content="telephone=no">
+  <title>世界杯2026 · 48队球员库</title>
+  <link rel="icon" href="data:,">
+  <link rel="stylesheet" href="./styles.css">
+</head>
+<body>
+  <header class="topbar">
+    <div class="topbar-inner">
+      <div class="brand">
+        <span class="brand-mark" aria-hidden="true">
+          <img src="./assets/world-cup-2026-logo.png" alt="">
+        </span>
+        <div>
+          <div class="brand-title" id="brandTitle">世界杯2026 · 48队球员库</div>
+          <div class="brand-sub" id="sourceStamp">FIFA 官方名单加载中</div>
+        </div>
+      </div>
+      <div class="top-actions">
+        <button class="lang-button" id="langButton" type="button" aria-label="Switch language">EN</button>
+        <button class="source-button" id="sourceButton" type="button">来源</button>
+      </div>
+    </div>
+    <div class="search-row">
+      <label class="search-box">
+        <span id="searchLabel">搜索</span>
+        <input id="searchInput" type="search" placeholder="球队 / 球员 / 俱乐部">
+      </label>
+    </div>
+    <nav class="group-tabs" id="groupTabs" aria-label="小组筛选"></nav>
+    <nav class="position-tabs" id="positionTabs" aria-label="位置筛选"></nav>
+  </header>
+
+  <main class="layout">
+    <section class="teams-pane" id="teamsPane" aria-label="球队列表"></section>
+    <section class="detail-pane" id="detailPane" aria-label="球队详情"></section>
+  </main>
+
+  <dialog class="player-dialog" id="playerDialog">
+    <button class="dialog-close" id="dialogClose" type="button" aria-label="关闭">×</button>
+    <div id="playerDialogBody"></div>
+  </dialog>
+
+  <dialog class="source-dialog" id="sourceDialog">
+    <button class="dialog-close" id="sourceClose" type="button" aria-label="关闭">×</button>
+    <div class="source-copy">
+      <h2 id="sourceTitle">数据说明</h2>
+      <p id="sourceIntro">球队与球员名单来自 FIFA 官方公开 API 和 FIFA 官方 2026 世界杯 Squad List PDF。参考页用于分组、中文队名和视觉信息结构。</p>
+      <p id="photoIntro">球员照片只展示 FIFA API 当前返回的官方图片 URL；未返回图片的球员使用国家队颜色占位，不混用非官方图片。</p>
+      <ul id="sourceList"></ul>
+    </div>
+  </dialog>
+
+  <script src="./app.js?v=20260626-1" type="module"></script>
+</body>
+</html>
